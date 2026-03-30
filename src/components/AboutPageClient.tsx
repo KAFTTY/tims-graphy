@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { IMAGES } from "@/lib/images";
 
 const TEAM = [
   {
@@ -106,12 +108,16 @@ export default function AboutPageClient() {
           {TEAM.map((member, i) => (
             <div key={member.name} className="reveal" style={{ transitionDelay: `${i * 0.12}s` }}>
               {/* Photo placeholder */}
-              <div style={{ background: "var(--bg3)", height: "360px", marginBottom: "1.75rem", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid var(--border-gold)", position: "relative", overflow: "hidden" }}>
-                <svg width="70" height="100" viewBox="0 0 70 100" fill="none" opacity="0.2">
-                  <circle cx="35" cy="30" r="20" stroke="#c9a96e" strokeWidth="1"/>
-                  <ellipse cx="35" cy="78" rx="28" ry="18" stroke="#c9a96e" strokeWidth="1"/>
-                </svg>
-                <div style={{ position: "absolute", bottom: "1rem", left: "1rem", fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--gold)", opacity: 0.6 }}>
+              <div style={{ height: "360px", marginBottom: "1.75rem", position: "relative", overflow: "hidden", border: "1px solid var(--border-gold)" }}>
+                <Image
+                  src={IMAGES.team[i].src}
+                  alt={IMAGES.team[i].alt}
+                  fill
+                  sizes="(max-width:768px) 100vw, 33vw"
+                  style={{ objectFit: "cover", objectPosition: "center top" }}
+                />
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,8,6,0.6) 0%, transparent 60%)" }} />
+                <div style={{ position: "absolute", bottom: "1rem", left: "1rem", fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--gold)" }}>
                   {member.specialty}
                 </div>
               </div>

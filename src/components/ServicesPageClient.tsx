@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { IMAGES } from "@/lib/images";
 
 const SERVICES_DETAIL = [
   {
@@ -153,16 +155,16 @@ function ServiceBlock({ service, index }: { service: typeof SERVICES_DETAIL[0]; 
           ))}
         </div>
 
-        {/* Visual placeholder */}
-        <div style={{
-          marginTop: "2.5rem", background: "var(--bg3)",
-          height: "280px", display: "flex", alignItems: "center", justifyContent: "center",
-          border: "1px solid var(--border-gold)",
-        }}>
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.15">
-            <circle cx="40" cy="32" r="18" stroke="#c9a96e" strokeWidth="1"/>
-            <ellipse cx="40" cy="62" rx="28" ry="14" stroke="#c9a96e" strokeWidth="1"/>
-          </svg>
+        {/* Service image */}
+        <div style={{ marginTop: "2.5rem", height: "280px", position: "relative", overflow: "hidden", border: "1px solid var(--border-gold)" }}>
+          <Image
+            src={IMAGES.services[parseInt(service.num) - 1]?.src || IMAGES.services[0].src}
+            alt={service.title}
+            fill
+            sizes="45vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(10,8,6,0.35)" }} />
         </div>
 
         <p style={{ fontSize: "0.75rem", color: "var(--muted)", marginTop: "1rem", lineHeight: 1.7 }}>
