@@ -43,13 +43,13 @@ function ServiceCard({ num, title, description, price, delay, imageIndex }: {
       }} />
 
       {/* Image */}
-      <div style={{ position: "relative", height: "220px", overflow: "hidden", flexShrink: 0 }}>
+      <div style={{ position: "relative", height: "350px", overflow: "hidden", flexShrink: 0 }}>
         <Image
           src={img.src}
           alt={img.alt}
           fill
           sizes="33vw"
-          style={{ objectFit: "cover", objectPosition: "center", transition: "transform 0.6s ease" }}
+          style={{ objectFit: "cover", objectPosition: "top", transition: "transform 0.6s ease" }}
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 40%, rgba(10,8,6,0.7) 100%)" }} />
       </div>

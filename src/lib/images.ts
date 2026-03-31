@@ -25,12 +25,12 @@ export const IMAGES = {
   },
 
   services: [
-    { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80&auto=format&fit=crop", alt: "Wedding photography" },
-    { src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80&auto=format&fit=crop", alt: "Birthday photography" },
-    { src: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80&auto=format&fit=crop", alt: "Model shoot" },
-    { src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=800&q=80&auto=format&fit=crop", alt: "Graduation shoot" },
-    { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80&auto=format&fit=crop", alt: "Portrait and headshots" },
-    { src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80&auto=format&fit=crop", alt: "Commercial photography" },
+    { src: "https://images.unsplash.com/photo-1719499719196-7a256956a22b?q=80&w=435&auto=format&fit=crop", alt: "Wedding photography" },
+    { src: "https://images.unsplash.com/photo-1719759336396-8d48538a1503?q=80&w=725&auto=format&fit=crop", alt: "Birthday photography" },
+    { src: "https://images.unsplash.com/photo-1733322992706-1210ca79f4df?q=80&w=870&auto=format&fit=crop", alt: "Model shoot" },
+    { src: "https://images.unsplash.com/photo-1625061770820-514e6228f4ee?q=80&w=387&auto=format&fit=crop", alt: "Graduation shoot" },
+    { src: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=387&auto=format&fit=crop", alt: "Portrait and headshots" },
+    { src: "https://images.unsplash.com/photo-1722410180670-b6d5a2e704fa?q=80&w=387&auto=format&fit=crop", alt: "Commercial photography" },
   ],
 
   portfolio: [
