@@ -84,8 +84,8 @@ export default function Hero() {
           display: "flex", gap: "1.25rem", justifyContent: "center", flexWrap: "wrap",
           opacity: 0, animation: "heroFadeUp 1s 1.2s cubic-bezier(0.25,0.46,0.45,0.94) forwards",
         }}>
-          <a href="/portfolio" className="btn-gold">Explore Portfolio</a>
-          <a href="/contact" className="btn-outline">Book a Session</a>
+          <a href="#gallery" className="btn-gold">Explore Portfolio</a>
+          <a href="#contact" className="btn-outline">Book a Session</a>
         </div>
       </div>
 

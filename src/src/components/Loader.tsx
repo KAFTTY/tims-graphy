@@ -97,7 +97,7 @@ export default function Loader() {
             transition={{ duration: 0.9, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             style={{
               fontFamily: "var(--font-cormorant), serif",
-              fontSize: "4rem",
+              fontSize: "2rem",
               fontWeight: 300,
               letterSpacing: "0.45em",
               textTransform: "uppercase",
@@ -107,15 +107,9 @@ export default function Loader() {
               gap: "0",
             }}
           >
-            T
-            <span style={{ fontStyle: "italic", color: "var(--gold)", fontSize: "2rem" }}>
-              im's
-            </span>
-            <span style={{ fontStyle: "italic", color: "var(--gold2)", fontSize: "4rem" }}>
-              G
-            </span>
-            <span style={{ fontStyle: "italic", color: "var(--gold)", fontSize: "2rem" }}>
-              raphy
+            Obsi
+            <span style={{ fontStyle: "italic", color: "var(--gold)" }}>
+              dian
             </span>
           </motion.div>
 

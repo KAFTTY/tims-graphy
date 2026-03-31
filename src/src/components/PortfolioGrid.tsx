@@ -16,22 +16,22 @@ interface PortfolioItem {
 }
 
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { id: 1, label: "Adanna & Emeka", category: "Weddings", size: "tall" },
-  { id: 2, label: "Zara — Studio", category: "Model Shoots", size: "square" },
-  { id: 3, label: "Luxury Brand", category: "Commercial", size: "wide" },
-  { id: 4, label: "Lagos Fashion Week", category: "Model Shoots", size: "square" },
-  { id: 5, label: "Chioma & David", category: "Weddings", size: "wide" },
-  { id: 6, label: "Corporate Headshot", category: "Portraits", size: "tall" },
-  { id: 7, label: "Product Launch", category: "Commercial", size: "square" },
-  { id: 8, label: "Tolu & Emeka", category: "Weddings", size: "square" },
-  { id: 9, label: "Personal Branding", category: "Portraits", size: "wide" },
-  { id: 10, label: "Graduation 2024", category: "Graduations", size: "tall" },
-  { id: 11, label: "Jewellery Campaign", category: "Commercial", size: "square" },
-  { id: 12, label: "Nkechi & Chidi", category: "Weddings", size: "tall" },
-  { id: 13, label: "Birthday Celebration", category: "Birthdays", size: "wide" },
-  { id: 14, label: "Executive Portrait", category: "Portraits", size: "square" },
-  { id: 15, label: "Skincare Brand", category: "Commercial", size: "tall" },
-  { id: 16, label: "Femi & Bola", category: "Weddings", size: "square" },
+  { id: 1,  label: "Adanna & Emeka",      category: "Weddings",     size: "tall"   },
+  { id: 2,  label: "Zara — Studio",        category: "Model Shoots", size: "square" },
+  { id: 3,  label: "Luxury Brand",         category: "Commercial",   size: "wide"   },
+  { id: 4,  label: "Lagos Fashion Week",   category: "Model Shoots", size: "square" },
+  { id: 5,  label: "Chioma & David",       category: "Weddings",     size: "wide"   },
+  { id: 6,  label: "Corporate Headshot",   category: "Portraits",    size: "tall"   },
+  { id: 7,  label: "Product Launch",       category: "Commercial",   size: "square" },
+  { id: 8,  label: "Tolu & Emeka",         category: "Weddings",     size: "square" },
+  { id: 9,  label: "Personal Branding",    category: "Portraits",    size: "wide"   },
+  { id: 10, label: "Graduation 2024",      category: "Graduations",  size: "tall"   },
+  { id: 11, label: "Jewellery Campaign",   category: "Commercial",   size: "square" },
+  { id: 12, label: "Nkechi & Chidi",       category: "Weddings",     size: "tall"   },
+  { id: 13, label: "Birthday Celebration", category: "Birthdays",    size: "wide"   },
+  { id: 14, label: "Executive Portrait",   category: "Portraits",    size: "square" },
+  { id: 15, label: "Skincare Brand",       category: "Commercial",   size: "tall"   },
+  { id: 16, label: "Femi & Bola",          category: "Weddings",     size: "square" },
 ];
 
 function PortfolioCard({
@@ -39,24 +39,24 @@ function PortfolioCard({
 }: {
   item: PortfolioItem; imgIndex: number; onOpen: () => void;
 }) {
-  const imgRef = useRef<HTMLDivElement>(null);
+  const imgRef     = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
-  const infoRef = useRef<HTMLDivElement>(null);
-  const zoomRef = useRef<HTMLDivElement>(null);
-  const img = IMAGES.portfolio[imgIndex % IMAGES.portfolio.length];
-  const heightMap = { tall: "420px", wide: "240px", square: "320px" };
+  const infoRef    = useRef<HTMLDivElement>(null);
+  const zoomRef    = useRef<HTMLDivElement>(null);
+  const img        = IMAGES.portfolio[imgIndex % IMAGES.portfolio.length];
+  const heightMap  = { tall: "420px", wide: "240px", square: "320px" };
 
   function onEnter() {
-    if (imgRef.current) imgRef.current.style.transform = "scale(1.06)";
+    if (imgRef.current)     imgRef.current.style.transform   = "scale(1.06)";
     if (overlayRef.current) overlayRef.current.style.opacity = "1";
-    if (infoRef.current) infoRef.current.style.transform = "translateY(0)";
-    if (zoomRef.current) zoomRef.current.style.opacity = "1";
+    if (infoRef.current)    infoRef.current.style.transform  = "translateY(0)";
+    if (zoomRef.current)    zoomRef.current.style.opacity    = "1";
   }
   function onLeave() {
-    if (imgRef.current) imgRef.current.style.transform = "scale(1)";
+    if (imgRef.current)     imgRef.current.style.transform   = "scale(1)";
     if (overlayRef.current) overlayRef.current.style.opacity = "0";
-    if (infoRef.current) infoRef.current.style.transform = "translateY(8px)";
-    if (zoomRef.current) zoomRef.current.style.opacity = "0";
+    if (infoRef.current)    infoRef.current.style.transform  = "translateY(8px)";
+    if (zoomRef.current)    zoomRef.current.style.opacity    = "0";
   }
 
   return (
@@ -113,24 +113,24 @@ function PortfolioCard({
 }
 
 export default function PortfolioGrid() {
-  const [active, setActive] = useState<Category>("All");
-  const [lightbox, setLightbox] = useState<{ open: boolean; index: number }>({ open: false, index: 0 });
+  const [active,    setActive]    = useState<Category>("All");
+  const [lightbox,  setLightbox]  = useState<{ open: boolean; index: number }>({ open: false, index: 0 });
 
   const filtered = active === "All"
     ? PORTFOLIO_ITEMS
     : PORTFOLIO_ITEMS.filter((i) => i.category === active);
 
   // Build lightbox image list from filtered items
-  const lightboxImages = filtered.map((item) => ({
-  ...IMAGES.portfolio[(item.id - 1) % IMAGES.portfolio.length],
+  const lightboxImages = filtered.map((item, i) => ({
+    ...IMAGES.portfolio[i % IMAGES.portfolio.length],
     category: item.category,
     alt: item.label,
   }));
 
-  const openLightbox = useCallback((index: number) => setLightbox({ open: true, index }), []);
+  const openLightbox  = useCallback((index: number) => setLightbox({ open: true, index }), []);
   const closeLightbox = useCallback(() => setLightbox({ open: false, index: 0 }), []);
-  const nextImage = useCallback(() => setLightbox((lb) => ({ open: true, index: (lb.index + 1) % lightboxImages.length })), [lightboxImages.length]);
-  const prevImage = useCallback(() => setLightbox((lb) => ({ open: true, index: (lb.index - 1 + lightboxImages.length) % lightboxImages.length })), [lightboxImages.length]);
+  const nextImage     = useCallback(() => setLightbox((lb) => ({ open: true, index: (lb.index + 1) % lightboxImages.length })), [lightboxImages.length]);
+  const prevImage     = useCallback(() => setLightbox((lb) => ({ open: true, index: (lb.index - 1 + lightboxImages.length) % lightboxImages.length })), [lightboxImages.length]);
 
   useEffect(() => {
     const els = document.querySelectorAll(".reveal");
@@ -163,7 +163,7 @@ export default function PortfolioGrid() {
       <div className="portfolio-masonry" style={{ columns: "3 280px", columnGap: "8px", padding: "0 3.5rem 6rem" }}>
         {filtered.map((item, i) => (
           <div key={`${active}-${item.id}`} style={{ breakInside: "avoid", marginBottom: "8px" }}>
-            <PortfolioCard item={item} imgIndex={item.id - 1} onOpen={() => openLightbox(i)} />
+            <PortfolioCard item={item} imgIndex={i} onOpen={() => openLightbox(i)} />
           </div>
         ))}
       </div>

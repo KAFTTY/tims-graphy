@@ -55,7 +55,7 @@ export default function AboutPageClient() {
           {/* Layered gradient — dark at bottom for text, subtle at top */}
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(10,8,6,0.95) 0%, rgba(10,8,6,0.5) 40%, rgba(10,8,6,0.85) 80%, rgba(10,8,6,1) 100%)",
+            background: "linear-gradient(to bottom, rgba(10,8,6,0.35) 0%, rgba(10,8,6,0.2) 40%, rgba(10,8,6,0.85) 80%, rgba(10,8,6,1) 100%)",
           }} />
         </div>
 
