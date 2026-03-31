@@ -49,7 +49,7 @@ function ServiceCard({ num, title, description, price, delay, imageIndex }: {
           alt={img.alt}
           fill
           sizes="33vw"
-          style={{ objectFit: "cover", objectPosition: "top", transition: "transform 0.6s ease" }}
+          style={{ objectFit: "cover", objectPosition: "0px -10px", transition: "transform 0.6s ease" }}
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 40%, rgba(10,8,6,0.7) 100%)" }} />
       </div>

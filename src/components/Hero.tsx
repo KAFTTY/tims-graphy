@@ -35,7 +35,7 @@ export default function Hero() {
           fill
           priority
           sizes="130vw"
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ objectFit: "cover", objectPosition: "0px -500px" }}
         />
         {/* Dark overlay so text stays readable */}
         <div style={{
