@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import CursorSpotlight from "@/components/CursorSpotlight";
 import JsonLd from "@/components/JsonLd";
+import PageTransition from "@/components/PageTransition";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -24,61 +25,24 @@ const BASE_URL = "https://timsgraphy.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: {
-    default: "Tim's Graphy — Photography",
-    template: "%s — Tim's Graphy",
-  },
-  description:
-    "Award-winning photography studio based in Lagos, Nigeria. Specialising in weddings, portraits, and commercial photography.",
-  keywords: [
-    "photography Lagos",
-    "wedding photographer Lagos",
-    "portrait photographer Nigeria",
-    "commercial photography Lagos",
-    "Tim's Graphy",
-    "professional photographer Nigeria",
-  ],
+  title: { default: "Tim's Graphy — Photography", template: "%s — Tim's Graphy" },
+  description: "Award-winning photography studio based in Lagos, Nigeria. Specialising in weddings, portraits, and commercial photography.",
+  keywords: ["photography Lagos", "wedding photographer Lagos", "portrait photographer Nigeria", "commercial photography Lagos", "Tim's Graphy"],
   authors: [{ name: "Tim's Graphy", url: BASE_URL }],
   creator: "Tim's Graphy",
   publisher: "Tim's Graphy",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
-  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   openGraph: {
-    type: "website",
-    locale: "en_NG",
-    url: BASE_URL,
-    siteName: "Tim's Graphy",
+    type: "website", locale: "en_NG", url: BASE_URL, siteName: "Tim's Graphy",
     title: "Tim's Graphy — Photography",
-    description:
-      "Award-winning photography studio based in Lagos, Nigeria. Weddings, portraits & commercial work.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Tim's Graphy — Photography",
-      },
-    ],
+    description: "Award-winning photography studio based in Lagos, Nigeria.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Tim's Graphy — Photography" }],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Tim's Graphy — Photography",
-    description:
-      "Award-winning photography studio based in Lagos, Nigeria.",
-    images: ["/og-image.jpg"],
-    creator: "@timsgraphy",
-  },
-  alternates: {
-    canonical: BASE_URL,
-  },
+  twitter: { card: "summary_large_image", title: "Tim's Graphy — Photography", description: "Award-winning photography studio based in Lagos, Nigeria.", images: ["/og-image.jpg"], creator: "@timsgraphy" },
+  alternates: { canonical: BASE_URL },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${outfit.variable}`}>
       <head>
@@ -91,6 +55,7 @@ export default function RootLayout({
       <body>
         <JsonLd />
         <CursorSpotlight />
+        <PageTransition />
         <Navbar />
         {children}
       </body>

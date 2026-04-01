@@ -250,18 +250,29 @@ export default function ServicesPageClient() {
 
   return (
     <main style={{ background: "var(--bg)", minHeight: "100vh" }}>
-      {/* Page hero */}
-      <section style={{ paddingTop: "10rem", paddingBottom: "5rem", paddingLeft: "3.5rem", paddingRight: "3.5rem", textAlign: "center" }}>
-        <span style={{ fontSize: "0.65rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "var(--gold)", display: "block", marginBottom: "1.25rem", opacity: 0, animation: "fadeUp 0.9s 0.2s forwards" }}>
-          What We Offer
-        </span>
-        <h1 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.8rem, 7vw, 6rem)", fontWeight: 300, lineHeight: 1.05, color: "var(--cream)", marginBottom: "1.5rem", opacity: 0, animation: "fadeUp 0.9s 0.4s forwards" }}>
-          Photography <em style={{ color: "var(--gold2)", fontStyle: "italic" }}>Services</em>
-        </h1>
-        <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--muted)", maxWidth: "540px", margin: "0 auto", opacity: 0, animation: "fadeUp 0.9s 0.6s forwards" }}>
-          Three disciplines, one commitment — images that matter. Every service is
-          built around deep collaboration, intentional craft, and results that endure.
-        </p>
+      {/* Page hero — full bg image */}
+      <section style={{ position: "relative", minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", textAlign: "center", padding: "2rem" }}>
+        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <Image
+            src={IMAGES.services[0].src}
+            alt="Photography services"
+            fill priority
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center center" }}
+          />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(10,8,6,0.6) 0%, rgba(10,8,6,0.5) 50%, rgba(10,8,6,0.9) 100%)" }} />
+        </div>
+        <div style={{ position: "relative", zIndex: 2, paddingTop: "8rem", paddingBottom: "4rem" }}>
+          <span style={{ fontSize: "0.65rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "var(--gold)", display: "block", marginBottom: "1.25rem", opacity: 0, animation: "fadeUp 0.9s 0.2s forwards" }}>
+            What I Offer
+          </span>
+          <h1 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.8rem, 7vw, 6rem)", fontWeight: 300, lineHeight: 1.05, color: "var(--cream)", marginBottom: "1.5rem", opacity: 0, animation: "fadeUp 0.9s 0.4s forwards" }}>
+            Photography <em style={{ color: "var(--gold2)", fontStyle: "italic" }}>Services</em>
+          </h1>
+          <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "rgba(245,240,232,0.72)", maxWidth: "540px", margin: "0 auto", opacity: 0, animation: "fadeUp 0.9s 0.6s forwards" }}>
+            Every session is personal. Built around your vision, your moment, your story.
+          </p>
+        </div>
       </section>
 
       {/* Service blocks */}

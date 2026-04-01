@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { SITE } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 const SESSION_TYPES = [
   "Wedding & Events",
@@ -70,18 +72,30 @@ export default function ContactPageClient() {
 
   return (
     <main style={{ background: "var(--bg)", minHeight: "100vh" }}>
-      {/* Hero */}
-      <section style={{ paddingTop: "10rem", paddingBottom: "4rem", paddingLeft: "3.5rem", paddingRight: "3.5rem", textAlign: "center" }}>
-        <span style={{ fontSize: "0.65rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "var(--gold)", display: "block", marginBottom: "1.25rem", opacity: 0, animation: "fadeUp 0.9s 0.2s forwards" }}>
-          Let's Talk
-        </span>
-        <h1 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.8rem, 7vw, 6rem)", fontWeight: 300, lineHeight: 1.05, color: "var(--cream)", marginBottom: "1.5rem", opacity: 0, animation: "fadeUp 0.9s 0.4s forwards" }}>
-          Start a <em style={{ color: "var(--gold2)", fontStyle: "italic" }}>conversation</em>
-        </h1>
-        <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--muted)", maxWidth: "540px", margin: "0 auto", opacity: 0, animation: "fadeUp 0.9s 0.6s forwards" }}>
-          Whether you have a date in mind or just an idea — we'd love to hear from you.
-          Fill in the form and we'll get back to you within 24 hours.
-        </p>
+      {/* Hero — full bg image */}
+      <section style={{ position: "relative", minHeight: "55vh", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", textAlign: "center", padding: "2rem" }}>
+        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <Image
+            src={IMAGES.gallery[0].src}
+            alt="Contact Tim's Graphy"
+            fill priority
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center center" }}
+          />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(10,8,6,0.65) 0%, rgba(10,8,6,0.55) 50%, rgba(10,8,6,0.92) 100%)" }} />
+        </div>
+        <div style={{ position: "relative", zIndex: 2, paddingTop: "8rem", paddingBottom: "4rem" }}>
+          <span style={{ fontSize: "0.65rem", letterSpacing: "0.35em", textTransform: "uppercase", color: "var(--gold)", display: "block", marginBottom: "1.25rem", opacity: 0, animation: "fadeUp 0.9s 0.2s forwards" }}>
+            Let's Talk
+          </span>
+          <h1 style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.8rem, 7vw, 6rem)", fontWeight: 300, lineHeight: 1.05, color: "var(--cream)", marginBottom: "1.5rem", opacity: 0, animation: "fadeUp 0.9s 0.4s forwards" }}>
+            Start a <em style={{ color: "var(--gold2)", fontStyle: "italic" }}>conversation</em>
+          </h1>
+          <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "rgba(245,240,232,0.72)", maxWidth: "540px", margin: "0 auto", opacity: 0, animation: "fadeUp 0.9s 0.6s forwards" }}>
+            Whether you have a date in mind or just an idea — I'd love to hear from you.
+            Fill in the form and I'll get back to you within 24 hours.
+          </p>
+        </div>
       </section>
 
       {/* Main grid */}
