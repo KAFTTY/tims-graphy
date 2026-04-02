@@ -63,7 +63,7 @@ export default function Hero() {
           color: "var(--gold)", marginBottom: "2rem", display: "block",
           opacity: 0, animation: "heroFadeUp 1s 0.3s cubic-bezier(0.25,0.46,0.45,0.94) forwards",
         }}>
-          Independent photographer · Lagos, Nigeria
+          Independent photographer · Ilorin, Nigeria
         </span>
         <h1 style={{
           fontFamily: "var(--font-cormorant), serif",

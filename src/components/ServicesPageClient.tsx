@@ -76,7 +76,7 @@ const SERVICES_DETAIL = [
 
 const FAQS = [
   { q: "How far in advance should I book?", a: "For weddings, we recommend booking 6–12 months in advance as our calendar fills quickly. For portraits and commercial shoots, 2–4 weeks is usually sufficient." },
-  { q: "Do you travel outside Lagos?", a: "Yes — we photograph across Nigeria and internationally. Travel fees apply for destinations outside Lagos. Get in touch with your location and we'll provide a custom quote." },
+  { q: "Do you travel outside Ilorin?", a: "Yes — we photograph across Nigeria and internationally. Travel fees apply for destinations outside Ilorin. Get in touch with your location and we'll provide a custom quote." },
   { q: "What happens if it rains on my wedding day?", a: "We've shot in every condition imaginable. Rain often produces some of the most dramatic and beautiful images. We come fully prepared and adapt our plan to make the most of whatever the day brings." },
   { q: "How long until I receive my photos?", a: "Portrait sessions are typically delivered within 5–7 business days. Wedding galleries are delivered within 4–6 weeks. Rush delivery is available for an additional fee." },
   { q: "Can I see the full gallery before purchasing prints?", a: "Absolutely. All clients receive access to a private online proofing gallery where you can view, favourite, and download your images before selecting any print products." },

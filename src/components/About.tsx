@@ -51,7 +51,7 @@ export default function About() {
             Chasing light<br /><em>since 2016</em>
           </h2>
           <p className="reveal" style={{ fontSize: "0.98rem", lineHeight: 1.95, color: "var(--muted)", marginBottom: "1.25rem", transitionDelay: "0.1s" }}>
-            We are a Lagos-based photography studio obsessed with the quiet power of a single frame. Founded on the belief that every face, every moment, every brand deserves to be seen beautifully.
+            We are a Ilorin-based photography studio obsessed with the quiet power of a single frame. Founded on the belief that every face, every moment, every brand deserves to be seen beautifully.
           </p>
           <p className="reveal" style={{ fontSize: "0.98rem", lineHeight: 1.95, color: "var(--muted)", marginBottom: "1.25rem", transitionDelay: "0.2s" }}>
             From intimate wedding ceremonies in Lekki to high-stakes commercial campaigns for global brands — our approach is always the same: patient, intentional, and deeply human.

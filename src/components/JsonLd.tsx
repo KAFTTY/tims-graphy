@@ -5,7 +5,7 @@ export default function JsonLd() {
     "@id": "https://timsgraphy.com",
     name: "Tim's Graphy",
     description:
-      "Award-winning photography studio based in Lagos, Nigeria. Specialising in weddings, portraits, and commercial photography.",
+      "Award-winning photography studio based in Ilorin, Nigeria. Specialising in weddings, portraits, and commercial photography.",
     url: "https://timsgraphy.com",
     telephone: "+2348012345678",
     email: "hello@timsgraphy.com",
@@ -17,7 +17,7 @@ export default function JsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: "Victoria Island",
-      addressLocality: "Lagos",
+      addressLocality: "Ilorin",
       addressCountry: "NG",
     },
     geo: {

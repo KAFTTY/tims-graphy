@@ -26,8 +26,8 @@ const BASE_URL = "https://timsgraphy.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: { default: "Tim's Graphy — Photography", template: "%s — Tim's Graphy" },
-  description: "Award-winning photography studio based in Lagos, Nigeria. Specialising in weddings, portraits, and commercial photography.",
-  keywords: ["photography Lagos", "wedding photographer Lagos", "portrait photographer Nigeria", "commercial photography Lagos", "Tim's Graphy"],
+  description: "Award-winning photography studio based in Ilorin, Nigeria. Specialising in weddings, portraits, and commercial photography.",
+  keywords: ["photography Ilorin", "wedding photographer Ilorin", "portrait photographer Nigeria", "commercial photography Ilorin", "Tim's Graphy"],
   authors: [{ name: "Tim's Graphy", url: BASE_URL }],
   creator: "Tim's Graphy",
   publisher: "Tim's Graphy",
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website", locale: "en_NG", url: BASE_URL, siteName: "Tim's Graphy",
     title: "Tim's Graphy — Photography",
-    description: "Award-winning photography studio based in Lagos, Nigeria.",
+    description: "Award-winning photography studio based in Ilorin, Nigeria.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Tim's Graphy — Photography" }],
   },
-  twitter: { card: "summary_large_image", title: "Tim's Graphy — Photography", description: "Award-winning photography studio based in Lagos, Nigeria.", images: ["/og-image.jpg"], creator: "@timsgraphy" },
+  twitter: { card: "summary_large_image", title: "Tim's Graphy — Photography", description: "Award-winning photography studio based in Ilorin, Nigeria.", images: ["/og-image.jpg"], creator: "@timsgraphy" },
   alternates: { canonical: BASE_URL },
 };
 

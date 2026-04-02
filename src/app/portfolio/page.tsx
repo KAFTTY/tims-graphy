@@ -3,11 +3,11 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 
 export const metadata: Metadata = {
   title: "Portfolio — Tim's Graphy",
-  description: "Browse our full portfolio of wedding, portrait, commercial, and editorial photography across Lagos and beyond.",
+  description: "Browse our full portfolio of wedding, portrait, commercial, and editorial photography across Ilorin and beyond.",
   alternates: { canonical: "https://timsgraphy.com/portfolio" },
   openGraph: {
     title: "Portfolio — Tim's Graphy",
-    description: "Browse our full portfolio of photography across Lagos and beyond.",
+    description: "Browse our full portfolio of photography across  Ilorin and beyond.",
     url: "https://timsgraphy.com/portfolio",
   },
 };
@@ -23,7 +23,7 @@ export default function PortfolioPage() {
           Selected <em style={{ color: "var(--gold2)", fontStyle: "italic" }}>Portfolio</em>
         </h1>
         <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--muted)", maxWidth: "540px", margin: "0 auto 3rem", opacity: 0, animation: "fadeUp 0.9s 0.6s forwards" }}>
-          Every frame is a decision. Browse our curated collection of work spanning weddings, portraits, commercial campaigns, and editorial projects across Lagos and beyond.
+          Every frame is a decision. Browse our curated collection of work spanning weddings, portraits, commercial campaigns, and editorial projects across Ilorin and beyond.
         </p>
         <PortfolioGrid />
       </section>

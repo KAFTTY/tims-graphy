@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Tim's Graphy",
   tagline: "Photography Studio",
-  email: "hello@timsgraphy.com",
+  email: "timsgraphy@gmail.com",
   phone: "+234 801 234 5678",
-  location: "Lagos, Nigeria",
+  location: "Ilorin, Nigeria",
   hours: "Monday – Saturday, 9am – 6pm",
   socials: {
     instagram: "#",

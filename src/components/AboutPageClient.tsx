@@ -13,11 +13,11 @@ const VALUES = [
 ];
 
 const MILESTONES = [
-  { year: "2018", event: "Started photography as a passion project — shooting portraits and street scenes across Lagos." },
+  { year: "2018", event: "Started photography as a passion project — shooting portraits and street scenes across Ilorin." },
   { year: "2019", event: "First paid wedding commission. Shot 12 weddings in the first year alone." },
   { year: "2020", event: "Expanded into commercial and product photography. First brand campaign delivered." },
   { year: "2021", event: "Launched graduation and birthday shoot packages. Crossed 200 happy clients." },
-  { year: "2022", event: "Featured in a Lagos lifestyle publication. Studio upgraded to Victoria Island." },
+  { year: "2022", event: "Featured in a Iolrin lifestyle publication. Studio upgraded to Victoria Island." },
   { year: "2023", event: "Crossed 500 sessions milestone. Started mentoring aspiring photographers." },
   { year: "2024", event: "Expanded into model and fashion shoots. Now serving clients across Nigeria." },
 ];
@@ -82,7 +82,7 @@ export default function AboutPageClient() {
             maxWidth: "560px",
             opacity: 0, animation: "fadeUp 0.9s 0.6s forwards",
           }}>
-            Hi, I'm Tim — an independent photographer based in Lagos, Nigeria.
+            Hi, I'm Tim — an independent photographer based in Ilorin, Nigeria.
             I specialise in weddings, portraits, model shoots, graduations, birthdays,
             and commercial work. Every session is personal to me.
           </p>
@@ -142,13 +142,13 @@ export default function AboutPageClient() {
               Six years,<br /><em>one lens at a time.</em>
             </h2>
             <p style={{ fontSize: "0.98rem", lineHeight: 1.95, color: "var(--muted)", marginBottom: "1.25rem" }}>
-              I picked up a camera in 2018 out of pure curiosity — and never put it down. What started as weekend portrait sessions in Lagos quickly grew into a full-time passion and profession.
+              I picked up a camera in 2018 out of pure curiosity — and never put it down. What started as weekend portrait sessions in Ilorin quickly grew into a full-time passion and profession.
             </p>
             <p style={{ fontSize: "0.98rem", lineHeight: 1.95, color: "var(--muted)", marginBottom: "1.25rem" }}>
               Today I shoot weddings, birthdays, model sessions, graduations, portraits, and commercial campaigns. I work alone — which means when you book me, you get me, fully present, from first consultation to final delivery.
             </p>
             <p style={{ fontSize: "0.98rem", lineHeight: 1.95, color: "var(--muted)", marginBottom: "2rem" }}>
-              Based in Lagos, available across Nigeria and beyond.
+              Based in Ilorin, available across Nigeria and beyond.
             </p>
 
             {/* Stats */}
