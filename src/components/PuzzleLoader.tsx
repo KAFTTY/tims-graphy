@@ -187,7 +187,7 @@ export default function PuzzleLoader({ onDone }: { onDone: () => void }) {
               sizes="20vw"
               style={{
                 objectFit: "cover",
-                objectPosition: "center",
+                objectPosition: "50% 20%",
                 filter: isCentre ? "brightness(0.25)" : "brightness(0.45) saturate(0.7)",
               }}
               priority={i < 10}
