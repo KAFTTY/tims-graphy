@@ -70,15 +70,15 @@ export const IMAGES = {
       alt: "Model shoot",
     },
     {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205689/_DSC0071_jfsbuw.jpg",
+      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223483/_DSC0046_iua3xq.jpg",
       alt: "Graduation shoot",
     },
     {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205688/_DSC0064copy_zpzynu.jpg",
+      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223008/_DSC0013_t9n20h.jpg",
       alt: "Portrait and headshots",
     },
     {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205690/_DSC0016copy_gwi771.jpg",
+      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223140/_DSC0269_u97gmo.jpg",
       alt: "Commercial photography",
     },
   ],
@@ -126,19 +126,124 @@ export const IMAGES = {
       category: "Weddings",
     },
     {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205688/_DSC0051copy_g8un3p.jpg",
-      alt: "Solo Portrait",
-      category: "Portraits",
+      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223182/_DSC0324_m4h2ex.jpg",
+      alt: "Graduation Shoot",
+      category: "Graduation",
     },
-    {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205689/_DSC0031copy_jhiyix.jpg",
-      alt: "Fashion Shoot",
-      category: "Model Shoots",
-    },
-    {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205690/_DSC0016copy_gwi771.jpg",
-      alt: "Commercial Event",
-      category: "Commercial",
-    },
+   {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223510/_DSC0505_d2ljkp.jpg",
+    alt: "Graduation portrait — Cap and gown",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223483/_DSC0046_iua3xq.jpg",
+    alt: "Graduation ceremony moment",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223458/_DSC0571_sygqqz.jpg",
+    alt: "Outdoor graduation shoot",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223329/_DSC0569_kux53i.jpg",
+    alt: "Graduation celebration",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223303/_DSC0534_qnkogx.jpg",
+    alt: "Portrait — Graduation day",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223304/_DSC0527_guslvn.jpg",
+    alt: "Candid graduation moment",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223287/_DSC0514_wx4omt.jpg",
+    alt: "Formal graduation portrait",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223300/_DSC0427_woxkm4.jpg",
+    alt: "Graduation shoot — Studio style",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223430/_DSC0426_jqpvc4.jpg",
+    alt: "Graduation milestone",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223240/_DSC0411_e2cwfj.jpg",
+    alt: "Portrait session — Graduation",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223238/_DSC0410_ypsvb0.jpg",
+    alt: "Celebrating success",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223185/_DSC0283_xgw7wp.jpg",
+    alt: "Close-up portrait",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223144/_DSC0271_rmeb0i.jpg",
+    alt: "Academic achievement shoot",
+    category: "Graduation",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223408/_DSC0257_lx1j7q.jpg",
+    alt: "Studio portrait — Style",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223053/_DSC0148_mrikgi.jpg",
+    alt: "Event photography — Interaction",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223081/_DSC0127_r2dcke.jpg",
+    alt: "Cultural event photography",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223077/_DSC0094_tptbmw.jpg",
+    alt: "Wedding ceremony detail",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775229006/_DSC0038_ub6r7t.jpg",
+    alt: "Studio Model Portrait — High Fashion",
+    category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228944/_DSC0035_hvjwg2.jpg",
+    alt: "Editorial Model Shoot",
+    category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228852/_DSC0031_ewowzv.jpg",
+    alt: "Model Portfolio — Lifestyle",
+    category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228826/_DSC0033_vqvmgz.jpg",
+    alt: "Cinematic Model Portrait",
+    category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228802/DSC_1147_v7srhc.jpg",
+    alt: "Outdoor Model Session",
+    category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228784/_DSC0197_gywhct.jpg",
+    alt: "Model Headshot — Professional",
+    category: "Model Shoots",
+  },
   ],
 };

@@ -13,25 +13,42 @@ interface PortfolioItem {
   label: string;
   category: Category;
   size: "tall" | "wide" | "square";
+  src?: string;
 }
 
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { id: 1, label: "Adanna & Emeka", category: "Weddings", size: "tall" },
-  { id: 2, label: "Zara — Studio", category: "Model Shoots", size: "square" },
-  { id: 3, label: "Luxury Brand", category: "Commercial", size: "wide" },
-  { id: 4, label: "Lagos Fashion Week", category: "Model Shoots", size: "square" },
-  { id: 5, label: "Chioma & David", category: "Weddings", size: "wide" },
-  { id: 6, label: "Corporate Headshot", category: "Portraits", size: "tall" },
-  { id: 7, label: "Product Launch", category: "Commercial", size: "square" },
-  { id: 8, label: "Tolu & Emeka", category: "Weddings", size: "square" },
-  { id: 9, label: "Personal Branding", category: "Portraits", size: "wide" },
-  { id: 10, label: "Graduation 2024", category: "Graduations", size: "tall" },
-  { id: 11, label: "Jewellery Campaign", category: "Commercial", size: "square" },
-  { id: 12, label: "Nkechi & Chidi", category: "Weddings", size: "tall" },
-  { id: 13, label: "Birthday Celebration", category: "Birthdays", size: "wide" },
-  { id: 14, label: "Executive Portrait", category: "Portraits", size: "square" },
-  { id: 15, label: "Skincare Brand", category: "Commercial", size: "tall" },
-  { id: 16, label: "Femi & Bola", category: "Weddings", size: "square" },
+  { id: 27, label: "High Fashion Studio", category: "Model Shoots", size: "tall" },
+  { id: 9, label: "Graduation Shoot", category: "Graduations", size: "tall" },
+  { id: 2, label: "Ifejesu & Victor II", category: "Weddings", size: "square" },
+  { id: 14, label: "Portrait Day", category: "Graduations", size: "tall" },
+  { id: 31, label: "Outdoor Model Shoot", category: "Model Shoots", size: "square"},
+  { id: 4, label: "Wedding Celebration", category: "Weddings", size: "wide" },
+  { id: 20, label: "Celebrating Success", category: "Graduations", size: "tall" },
+  { id: 28, label: "Editorial Session", category: "Model Shoots", size: "square" },
+  { id: 7, label: "The Reception", category: "Weddings", size: "wide" },
+  { id: 12, label: "Outdoor Session", category: "Graduations", size: "tall" },
+  { id: 25, label: "Cultural Celebration", category: "Weddings", size: "square" },
+  { id: 29, label: "Lifestyle Model Portfolio", category: "Model Shoots", size: "wide"},
+  { id: 8, label: "Ceremony Portrait", category: "Weddings", size: "square" },
+  { id: 17, label: "Studio Style", category: "Graduations", size: "tall" },
+  { id: 1, label: "Ifejesu & Victor I", category: "Weddings", size: "tall" },
+  { id: 30, label: "Cinematic Portrait", category: "Model Shoots", size: "tall"},
+  { id: 15, label: "Candid Joy", category: "Graduations", size: "wide" },
+  { id: 5, label: "The Couple", category: "Weddings", size: "square" },
+  { id: 23, label: "Graduation Style", category: "Graduations", size: "tall" },
+  { id: 26, label: "Ceremony Detail", category: "Weddings", size: "tall" },
+  { id: 10, label: "Cap and Gown", category: "Graduations", size: "square" },
+  { id: 32, label: "Professional Model Headshot", category: "Model Shoots", size: "tall"},
+  { id: 3, label: "Ifejesu & Victor III", category: "Weddings", size: "tall" },
+  { id: 11, label: "Ceremony Moment", category: "Graduations", size: "wide" },
+  { id: 18, label: "Graduation Milestone", category: "Graduations", size: "wide" },
+  { id: 24, label: "Event Highlight", category: "Weddings", size: "wide" },
+  { id: 19, label: "Portrait Session", category: "Graduations", size: "square" },
+  { id: 6, label: "First Dance", category: "Weddings", size: "tall" },
+  { id: 21, label: "Graduate Close-up", category: "Graduations", size: "square" },
+  { id: 13, label: "Graduation Celebration", category: "Graduations", size: "square" },
+  { id: 22, label: "Academic Achievement", category: "Graduations", size: "wide" },
+  { id: 16, label: "Formal Portrait", category: "Graduations", size: "square" },
 ];
 
 function PortfolioCard({
@@ -72,7 +89,7 @@ function PortfolioCard({
     >
       {/* Image */}
       <div ref={imgRef} style={{ width: "100%", height: "100%", position: "relative", transition: "transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94)" }}>
-        <Image src={img.src} alt={img.alt} fill sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style={{ objectFit: "cover", objectPosition: "50% 20%" }} />
+        <Image src={item.src || img.src} alt={img.alt} fill sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style={{ objectFit: "cover", objectPosition: "50% 20%" }} />
       </div>
 
       {/* Gradient overlay */}
@@ -122,7 +139,8 @@ export default function PortfolioGrid() {
 
   // Build lightbox image list from filtered items
   const lightboxImages = filtered.map((item) => ({
-  ...IMAGES.portfolio[(item.id - 1) % IMAGES.portfolio.length],
+    ...IMAGES.portfolio[(item.id - 1) % IMAGES.portfolio.length],
+    ...(item.src ? { src: item.src } : {}),
     category: item.category,
     alt: item.label,
   }));
