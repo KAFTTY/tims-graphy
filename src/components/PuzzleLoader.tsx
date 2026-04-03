@@ -16,40 +16,39 @@ const EXPAND_MS = 900;
 // 25 curated Unsplash photos — mix of wedding, portrait, model, graduation
 const TILE_IMAGES = [
   /* ROW 1 */
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0091copy_upbt7p.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0083copy_1_bo857l.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0071_jfsbuw.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205693/_DSC0093copy_wqniu8.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205690/_DSC0091copy_upbt7p.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205691/_DSC0083copy_wpu6hq.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205690/_DSC0083copy_1_bo857l.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205689/_DSC0071_jfsbuw.jpg",
 
   /* ROW 2 */
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0065copy_qzob8t.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0064copy_zpzynu.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0056copy_eqwxyf.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0051copy_g8un3p.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0031copy_jhiyix.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205691/_DSC0065copy_qzob8t.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205688/_DSC0064copy_zpzynu.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205688/_DSC0056copy_eqwxyf.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223182/_DSC0324_m4h2ex.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223510/_DSC0505_d2ljkp.jpg",
 
   /* ROW 3 */
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0016copy_gwi771.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
-  // index 12 = CENTRE — This is the anchor for your logo reveal
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_auto,w_600,q_80/v1775205690/_DSC0091copy_upbt7p.jpg", 
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0083copy_1_bo857l.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223483/_DSC0046_iua3xq.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223458/_DSC0571_sygqqz.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223329/_DSC0569_kux53i.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223303/_DSC0534_qnkogx.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223304/_DSC0527_guslvn.jpg",
 
   /* ROW 4 */
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0071_jfsbuw.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0065copy_qzob8t.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0064copy_zpzynu.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0056copy_eqwxyf.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0051copy_g8un3p.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223287/_DSC0514_wx4omt.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223300/_DSC0427_woxkm4.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223430/_DSC0426_jqpvc4.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223240/_DSC0411_e2cwfj.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223238/_DSC0410_ypsvb0.jpg",
 
   /* ROW 5 */
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0031copy_jhiyix.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0016copy_gwi771.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0091copy_upbt7p.jpg",
-  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223185/_DSC0283_xgw7wp.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223144/_DSC0271_rmeb0i.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223408/_DSC0257_lx1j7q.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223053/_DSC0148_mrikgi.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223081/_DSC0127_r2dcke.jpg",
 ];
 
 type Phase = "scramble" | "snap" | "logo" | "expand" | "done";

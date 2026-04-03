@@ -46,7 +46,7 @@ function GalleryItem({ label, index, gridColumn, gridRow }: {
           alt={img.alt}
           fill
           sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ objectFit: "cover", objectPosition: "50% 20%" }}
         />
       </div>
 
