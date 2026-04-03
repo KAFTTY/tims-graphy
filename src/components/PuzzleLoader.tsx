@@ -15,32 +15,41 @@ const EXPAND_MS = 900;
 
 // 25 curated Unsplash photos — mix of wedding, portrait, model, graduation
 const TILE_IMAGES = [
-  "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=75&auto=format&fit=crop",
-  // index 12 = centre — dark bg for the logo tile
-  "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1625061770820-514e6228f4ee?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1613730317814-1cede28e0151?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1548094990-c16ca90f1f0d?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1452457750107-be45081179df?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&q=75&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=75&auto=format&fit=crop",
+  /* ROW 1 */
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0091copy_upbt7p.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0083copy_1_bo857l.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0071_jfsbuw.jpg",
+
+  /* ROW 2 */
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0065copy_qzob8t.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0064copy_zpzynu.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0056copy_eqwxyf.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0051copy_g8un3p.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0031copy_jhiyix.jpg",
+
+  /* ROW 3 */
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0016copy_gwi771.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
+  // index 12 = CENTRE — This is the anchor for your logo reveal
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_auto,w_600,q_80/v1775205690/_DSC0091copy_upbt7p.jpg", 
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0083copy_1_bo857l.jpg",
+
+  /* ROW 4 */
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0071_jfsbuw.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0065copy_qzob8t.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0064copy_zpzynu.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0056copy_eqwxyf.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205688/_DSC0051copy_g8un3p.jpg",
+
+  /* ROW 5 */
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205689/_DSC0031copy_jhiyix.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0016copy_gwi771.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205693/_DSC0093copy_wqniu8.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205690/_DSC0091copy_upbt7p.jpg",
+  "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,w_400,q_70/v1775205691/_DSC0083copy_wpu6hq.jpg",
 ];
 
 type Phase = "scramble" | "snap" | "logo" | "expand" | "done";

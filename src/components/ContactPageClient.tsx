@@ -141,7 +141,7 @@ export default function ContactPageClient() {
             src={IMAGES.gallery[0].src}
             alt="Contact Tim's Graphy"
             fill priority sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center center" }}
+            style={{ objectFit: "cover", objectPosition: "50% 20%" }}
           />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(10,8,6,0.65) 0%, rgba(10,8,6,0.55) 50%, rgba(10,8,6,0.92) 100%)" }} />
         </div>

@@ -72,7 +72,7 @@ function PortfolioCard({
     >
       {/* Image */}
       <div ref={imgRef} style={{ width: "100%", height: "100%", position: "relative", transition: "transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94)" }}>
-        <Image src={img.src} alt={img.alt} fill sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style={{ objectFit: "cover", objectPosition: "center" }} />
+        <Image src={img.src} alt={img.alt} fill sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style={{ objectFit: "cover", objectPosition: "50% 20%" }} />
       </div>
 
       {/* Gradient overlay */}

@@ -23,7 +23,7 @@ const SERVICES_DETAIL = [
     ],
     packages: [
       { name: "Essential", price: "₦450,000", detail: "6 hrs · 1 photographer · 200 images" },
-      { name: "Classic",   price: "₦750,000", detail: "10 hrs · 2 photographers · 350 images + album" },
+      { name: "Classic", price: "₦750,000", detail: "10 hrs · 2 photographers · 350 images + album" },
       { name: "Signature", price: "₦1,200,000", detail: "Full day · 2 photographers · engagement shoot + album" },
     ],
     accent: "#c9a96e",
@@ -44,8 +44,8 @@ const SERVICES_DETAIL = [
       "Personal & commercial use license",
     ],
     packages: [
-      { name: "Mini",      price: "₦80,000",  detail: "1 hr · 1 location · 20 edited images" },
-      { name: "Standard",  price: "₦150,000", detail: "2 hrs · 2 looks · 40 edited images" },
+      { name: "Mini", price: "₦80,000", detail: "1 hr · 1 location · 20 edited images" },
+      { name: "Standard", price: "₦150,000", detail: "2 hrs · 2 looks · 40 edited images" },
       { name: "Executive", price: "₦280,000", detail: "Half day · multiple looks + locations · 80 images" },
     ],
     accent: "#e8cc9a",
@@ -66,9 +66,9 @@ const SERVICES_DETAIL = [
       "Raw files available on request",
     ],
     packages: [
-      { name: "Product",    price: "₦200,000", detail: "Half day · up to 10 products · 30 images" },
-      { name: "Brand",      price: "₦450,000", detail: "Full day · brand story · 80 images" },
-      { name: "Campaign",   price: "₦900,000", detail: "2 days · full art direction · 150+ images + BTS" },
+      { name: "Product", price: "₦200,000", detail: "Half day · up to 10 products · 30 images" },
+      { name: "Brand", price: "₦450,000", detail: "Full day · brand story · 80 images" },
+      { name: "Campaign", price: "₦900,000", detail: "2 days · full art direction · 150+ images + BTS" },
     ],
     accent: "#c9a96e",
   },
@@ -83,48 +83,29 @@ const FAQS = [
 ];
 
 function ServiceBlock({ service, index }: { service: typeof SERVICES_DETAIL[0]; index: number }) {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const isEven = index % 2 === 0;
 
   return (
     <div
-      className="reveal"
-      style={{
-        borderTop: "1px solid var(--border-gold)",
-        padding: "5rem 0",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "5rem",
-        alignItems: "start",
-        direction: isEven ? "ltr" : "rtl",
-      }}
+      className={`reveal service-block-container ${isEven ? "is-even" : "is-odd"}`}
     >
-      {/* Left / Right info */}
-      <div style={{ direction: "ltr" }}>
+      {/* Left info column */}
+      <div className="service-info-col">
         <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "1.5rem" }}>
           <span style={{
             fontFamily: "var(--font-cormorant), serif",
-            fontSize: "4rem", fontWeight: 300, color: "var(--faint)", lineHeight: 1,
+            fontSize: "clamp(3rem, 5vw, 4rem)", fontWeight: 300, color: "var(--faint)", lineHeight: 1,
           }}>{service.num}</span>
           <span style={{ fontSize: "0.65rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)" }}>
             Service
           </span>
         </div>
-        <h2 style={{
-          fontFamily: "var(--font-cormorant), serif",
-          fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 300,
-          color: "var(--cream)", marginBottom: "0.75rem", lineHeight: 1.15,
-        }}>{service.title}</h2>
-        <p style={{
-          fontFamily: "var(--font-cormorant), serif",
-          fontSize: "1.25rem", fontStyle: "italic", fontWeight: 300,
-          color: "var(--gold)", marginBottom: "1.75rem",
-        }}>{service.tagline}</p>
-        <p style={{ fontSize: "0.95rem", lineHeight: 1.9, color: "var(--muted)", marginBottom: "2.5rem" }}>
+        <h2 className="service-title-text">{service.title}</h2>
+        <p className="service-tagline-text">{service.tagline}</p>
+        <p className="service-desc-text">
           {service.description}
         </p>
 
-        {/* What's included */}
         <div style={{ marginBottom: "2.5rem" }}>
           <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "1.25rem" }}>
             What's included
@@ -144,8 +125,8 @@ function ServiceBlock({ service, index }: { service: typeof SERVICES_DETAIL[0]; 
         </Link>
       </div>
 
-      {/* Packages */}
-      <div style={{ direction: "ltr" }}>
+      {/* Right Packages column */}
+      <div className="service-packages-col">
         <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--gold)", marginBottom: "1.5rem" }}>
           Packages
         </p>
@@ -155,21 +136,19 @@ function ServiceBlock({ service, index }: { service: typeof SERVICES_DETAIL[0]; 
           ))}
         </div>
 
-        {/* Service image */}
-        <div style={{ marginTop: "2.5rem", height: "280px", position: "relative", overflow: "hidden", border: "1px solid var(--border-gold)" }}>
+        <div className="service-image-wrapper">
           <Image
             src={IMAGES.services[parseInt(service.num) - 1]?.src || IMAGES.services[0].src}
             alt={service.title}
             fill
-            sizes="45vw"
-            style={{ objectFit: "cover", objectPosition: "center" }}
+            sizes="(max-width: 768px) 100vw, 45vw"
+            style={{ objectFit: "cover", objectPosition: "50% 20%" }}
           />
           <div style={{ position: "absolute", inset: 0, background: "rgba(10,8,6,0.35)" }} />
         </div>
 
         <p style={{ fontSize: "0.75rem", color: "var(--muted)", marginTop: "1rem", lineHeight: 1.7 }}>
-          All packages include a personal consultation and are fully customisable. Pricing
-          is subject to travel, complexity, and seasonal demand. Contact us for a bespoke quote.
+          All packages include a personal consultation and are fully customisable.
         </p>
       </div>
     </div>
@@ -258,7 +237,7 @@ export default function ServicesPageClient() {
             alt="Photography services"
             fill priority
             sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center center" }}
+            style={{ objectFit: "cover", objectPosition: "50% 20%" }}
           />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(10,8,6,0.6) 0%, rgba(10,8,6,0.5) 50%, rgba(10,8,6,0.9) 100%)" }} />
         </div>
@@ -311,12 +290,95 @@ export default function ServicesPageClient() {
         <Link href="/contact" className="btn-gold">Get in Touch</Link>
       </section>
 
-      <style>{`
-        @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
-        @media (max-width: 768px) {
-          .service-block-grid { grid-template-columns: 1fr !important; direction: ltr !important; }
+    <style dangerouslySetInnerHTML={{
+      __html: `
+        @keyframes fadeUp { 
+          from { opacity:0; transform:translateY(24px); } 
+          to { opacity:1; transform:translateY(0); } 
         }
-      `}</style>
+
+        /* BASE GRID (LG) */
+        .service-block-container {
+          border-top: 1px solid var(--border-gold);
+          padding: 6rem 0;
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 6rem;
+          align-items: start;
+        }
+
+        .service-block-container.is-odd {
+          direction: rtl;
+        }
+        .service-block-container.is-odd > div {
+          direction: ltr; /* Reset text direction inside columns */
+        }
+
+        .service-title-text {
+          font-family: var(--font-cormorant), serif;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          font-weight: 300;
+          color: var(--cream);
+          margin-bottom: 0.75rem;
+          line-height: 1.1;
+        }
+
+        .service-tagline-text {
+          font-family: var(--font-cormorant), serif;
+          font-size: 1.35rem;
+          font-style: italic;
+          font-weight: 300;
+          color: var(--gold);
+          margin-bottom: 1.75rem;
+        }
+
+        .service-image-wrapper {
+          margin-top: 2.5rem;
+          height: 350px;
+          position: relative;
+          overflow: hidden;
+          border: 1px solid var(--border-gold);
+        }
+
+        /* MEDIUM SCREENS (md: 768px to 1024px) */
+        @media (max-width: 1024px) {
+          .service-block-container {
+            gap: 3rem;
+            padding: 4rem 0;
+          }
+        }
+
+        /* SMALL SCREENS (sm: 768px and below) */
+        @media (max-width: 768px) {
+          .service-block-container {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            padding: 4rem 1.5rem;
+            direction: ltr !important; /* Force natural stacking on mobile */
+          }
+
+          .service-block-container.is-odd {
+            direction: ltr !important;
+          }
+
+          .service-image-wrapper {
+            height: 250px; /* Shorter image for mobile to keep scroll fast */
+            order: -1; /* Optionally move image above packages on mobile */
+          }
+          
+          /* Adjust page padding */
+          main section {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+          }
+        }
+
+        /* EXTRA SMALL (Mobile Portrait) */
+        @media (max-width: 480px) {
+          .service-title-text { font-size: 2.2rem; }
+          .service-block-container { padding: 3rem 1rem; }
+        }
+      ` }} />
     </main>
   );
 }
