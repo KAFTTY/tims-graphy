@@ -44,14 +44,14 @@ export const IMAGES = {
   // ── TEAM (about page — Tim's portrait) ───────────────────────
   team: [
     {
-      src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205688/_DSC0051copy_g8un3p.jpg",
+ src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto//v1776178130/IMG_27bb9m_obdet8.jpg",
       alt: "Tim — Photographer",
     },
   ],
 
   // ── ABOUT STUDIO (about page hero) ───────────────────────────
   aboutStudio: {
-    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775205689/_DSC0031copy_jhiyix.jpg",
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto//v1776178130/IMG_27bb9m_obdet8.jpg",
     alt: "Tim's Graphy Studio",
   },
 
@@ -125,6 +125,7 @@ export const IMAGES = {
       alt: "Ceremony Portrait",
       category: "Weddings",
     },
+
     {
       src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223182/_DSC0324_m4h2ex.jpg",
       alt: "Graduation Shoot",
@@ -203,7 +204,7 @@ export const IMAGES = {
   {
     src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223053/_DSC0148_mrikgi.jpg",
     alt: "Event photography — Interaction",
-    category: "Events",
+    category: "Graduation",
   },
   {
     src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775223081/_DSC0127_r2dcke.jpg",
@@ -244,6 +245,106 @@ export const IMAGES = {
     src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1775228784/_DSC0197_gywhct.jpg",
     alt: "Model Headshot — Professional",
     category: "Model Shoots",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178130/_DSC0451_zkc2ps.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178129/_DSC0311_nu558a.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178129/_DSC0553_kanmqh.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178128/_DSC0763_o2yz7c.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178126/_DSC0413_jiyoi4.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178125/_DSC0762_x1ujea.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178125/_DSC0288_rarkye.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178125/_DSC0755_lrwqfd.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178124/_DSC0270_hsbfm8.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178122/_DSC0713_e0p3gx.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178120/_DSC0117copy_gr6yaw.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178120/_DSC0232_pwxddj.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178120/_DSC0122copy_tzowav.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178119/_DSC0663_yvfq8s.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178118/_DSC0235_htmpgt.jpg",
+    alt: "Wedding Portrait",
+    category: "Weddings",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178130/IMG_27bb9m_obdet8.jpg",
+    alt: "Portrait Image",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178130/DSC_0990_ascnwl.jpg",
+    alt: "Portrait Image",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178118/_DSC0235_htmpgt.jpg",
+    alt: "Portrait Image",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178122/_DSC0239_yu57hx.jpg",
+    alt: "Portrait Image",
+    category: "Portraits",
+  },
+  {
+    src: "https://res.cloudinary.com/dhxexwrnd/image/upload/c_fill,g_face,q_auto,f_auto/v1776178124/_DSC0246_iot0qh.jpg",
+    alt: "Portrait Image",
+    category: "Portraits",
   },
   ],
 };

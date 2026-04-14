@@ -50,7 +50,7 @@ export default function AboutPageClient() {
             fill
             priority
             sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 30%" }}
+            style={{ objectFit: "cover", objectPosition: "0 10%" }}
           />
           {/* Layered gradient — dark at bottom for text, subtle at top */}
           <div style={{
